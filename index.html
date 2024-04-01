@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rolagem Lateral Automática</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    /* Estilos para o container */
+    .container {
+        background-color: white;
+        box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.53);
+        -webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.53);
+        -moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.53);
+        height: 90%;
+        width: 100%; /* Largura do container */
+        overflow: hidden; /* Oculta conteúdo que ultrapassar a largura do container */
+        white-space: nowrap; /* Evita que o conteúdo quebre em várias linhas */
+    }
+    /* Estilos para as imagens */
+    .container img {
+        max-width: none; /* Revertendo a restrição de largura máxima */
+        max-height: 80%; /* Altura máxima da imagem em relação à altura do contêiner pai */
+        display: inline-block; /* Permite que as imagens sejam exibidas lado a lado */
+    }
+    /* Estilos para a animação da rolagem lateral */
+    @keyframes slide {
+        0% { transform: translateX(0); } /* Começa do ponto atual */
+        100% { transform: translateX(-100%); } /* Move para a esquerda até 100% da largura do container */
+    }
+    /* Estilos para o container que executa a animação */
+    .container-inner {
+        height: 100%;
+        animation: slide 45s linear infinite; /* Animação de deslocamento lateral com duração de 10s */
+    }
+    .img1{
+        margin-top: 100px;
+    }
+    .img2{
+        margin-bottom: 80px;
+    }
+    .img4{
+        margin-bottom: 80px;
+    }
+    .img6{
+        margin-bottom: 80px;
+    }
+    .img8{
+        margin-bottom: 80px;
+    }
+    .img10{
+        margin-bottom: 80px;
+    }
+    .img12{
+        margin-bottom: 80px;
+    }
+    .img14{
+        margin-bottom: 80px;
+    }
+    .img16{
+        margin-bottom: 80px;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="container-inner">
+        <img class="img1" src="img/1.png" alt="">
+        <img class="img2" src="img/2.png" alt="">
+        <img class="img3" src="img/3.png" alt="">
+        <img class="img4" src="img/4.png" alt="">
+        <img class="img5" src="img/5.png" alt="">
+        <img class="img6" src="img/6.png" alt="">
+        <img class="img7" src="img/7.png" alt="">
+        <img class="img8" src="img/8.png" alt="">
+        <img class="img9" src="img/9.png" alt="">
+        <img class="img10" src="img/10.png" alt="">
+        <img class="img11" src="img/11.png" alt="">
+        <img class="img12" src="img/12.png" alt="">
+        <img class="img13" src="img/13.png" alt="">
+        <img class="img14" src="img/14.png" alt="">
+        <img class="img15" src="img/15.png" alt="">
+        <img class="img16" src="img/16.png" alt="">
+    </div>
+</div>
+
+</body>
+</html>
